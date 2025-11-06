@@ -110,3 +110,19 @@ h1 {
 
 </body>
 </html>
+
+<!-- ✅ アクセスカウンター -->
+<div id="counter" style="margin-top:20px; font-size:14px; color:#555;">Loading...</div>
+
+<script>
+fetch("https://counter-app.english-phonics.workers.dev/?app=phonics-home")
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById("counter").innerText =
+      "このページのアクセス数: " + data.count + " 回";
+  })
+  .catch(err => {
+    document.getElementById("counter").innerText = "アクセス数を取得できませんでした。";
+    console.error(err);
+  });
+</script>
