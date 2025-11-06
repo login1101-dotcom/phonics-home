@@ -2,110 +2,111 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>Phonics Home - 発音記号アプリ一覧</title>
+<title>Phonics / 発音記号アプリ一覧（正式名称版）</title>
 <style>
 body {
   font-family: -apple-system, "Hiragino Sans", Arial, sans-serif;
-  background: #f8fafc;
+  background: #f4f7f6;
   text-align: center;
   margin: 0;
-  padding: 0;
+  padding: 20px 0;
 }
 h1 {
-  background: #0d7b78;
+  background: #00796b;
   color: white;
-  padding: 20px;
-  margin: 0;
+  padding: 12px;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0;
 }
 .card {
+  width: 130px;
+  height: 190px;
   background: white;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  padding: 20px;
+  border-radius: 10px;
+  border: 1.5px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  overflow: hidden;
   transition: transform 0.2s;
+  text-decoration: none;
+  color: inherit;
 }
-.card:hover {transform: scale(1.03);}
-.thumb {width: 100%; border-radius: 10px;}
-.title {font-weight: bold; margin-top: 10px; color: #0d7b78;}
-.desc {font-size: 14px; color: #555; margin-top: 5px;}
+.card:hover {
+  transform: translateY(-4px);
+}
+.card img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+}
+.title {
+  font-size: 13px;
+  font-weight: bold;
+  color: #00796b;
+  margin: 4px 0;
+  line-height: 1.2em;
+}
+.title span {
+  color: black;
+  font-size: 13px;
+}
+
+/* ✅ ①〜③と④〜⑨の3行目を赤文字に統一 */
+.card .title br + br + span {
+  color: red !important;
+}
 </style>
 </head>
 <body>
-<h1>Phonics / 発音記号アプリ一覧</h1>
+<h1>Phonics / 発音記号アプリ一覧（正式名称版）</h1>
 
-<div class="container">
-  <div class="card">
-    <a href="https://ipa-name-quiz.pages.dev">
-      <img src="img/1_symbol_name.png" class="thumb">
-      <div class="title">① 発音記号 ⇄ 名称クイズ</div>
-      <div class="desc">発音記号と名称の対応を覚えるクイズ</div>
-    </a>
-  </div>
-
-  <div class="card">
-    <a href="https://ipa-sound-name-quiz.pages.dev">
-      <img src="img/2_sound_symbol_name.png" class="thumb">
-      <div class="title">② 音声＋記号 → 名称クイズ</div>
-      <div class="desc">音を聞いて正しい記号名を選ぶ練習</div>
-    </a>
-  </div>
-
-  <div class="card">
-    <a href="https://ipa-name-training.pages.dev">
-      <img src="img/3_review_mode.png" class="thumb">
-      <div class="title">③ 苦手克服モード</div>
-      <div class="desc">苦手な問題だけを繰り返し練習できる</div>
-    </a>
-  </div>
-
-  <div class="card">
-    <a href="https://ipa-name-training-karuta-1.pages.dev">
-      <img src="img/4_name_symbol.png" class="thumb">
-      <div class="title">④ 名称 ⇄ 記号 カルタ</div>
-      <div class="desc">名称と記号をペアで覚える練習</div>
-    </a>
-  </div>
-
-  <div class="card">
-    <a href="https://ipa-name-training-karuta-2.pages.dev">
-      <img src="img/5_symbol_name.png" class="thumb">
-      <div class="title">⑤ 記号 ⇄ 名称 カルタ</div>
-      <div class="desc">記号を見て名称を答える練習</div>
-    </a>
-  </div>
-
-  <div class="card">
-    <a href="https://ipa-name-training-karuta-3.pages.dev">
-      <img src="img/6_word_symbol.png" class="thumb">
-      <div class="title">⑥ 例単語 → 名称＋記号</div>
-      <div class="desc">例単語から正しい記号を選ぶ練習</div>
-    </a>
-  </div>
-
-  <div class="card">
-    <a href="https://ipa-name-training-karuta-4.pages.dev">
-      <img src="img/7_name_word.png" class="thumb">
-      <div class="title">⑦ 名称 → 例単語 カルタ</div>
-      <div class="desc">名称から例単語を選ぶ練習</div>
-    </a>
-  </div>
-
-  <div class="card">
-    <a href="https://ipa-name-training-karuta-5.pages.dev">
-      <img src="img/8_symbol_word.png" class="thumb">
-      <div class="title">⑧ 記号 → 例単語 カルタ</div>
-      <div class="desc">記号から例単語を選ぶ練習</div>
-    </a>
-  </div>
-
-  <div class="card">
-    <a href="https://ipa-name-training-karuta-6.pages.dev">
-      <img src="img/9_word_symbol2.png" class="thumb">
-      <div class="title">⑨ 例単語 → 記号 カルタ</div>
-      <div class="desc">例単語を見て記号を答える練習</div>
-    </a>
-  </div>
+<div class="row">
+  <a href="https://ipa-name-quiz.pages.dev" target="_blank" class="card">
+    <img src="img/1_symbol_name.png">
+    <div class="title">①<br>名称 ⇄ 記号<br><span>最も基本のクイズ</span></div>
+  </a>
+  <a href="https://ipa-sound-name-quiz.pages.dev" target="_blank" class="card">
+    <img src="img/2_sound_symbol_name.png">
+    <div class="title">②<br>音と記号 → 名称<br><span>音を聞くクイズ</span></div>
+  </a>
+  <a href="https://ipa-name-training.pages.dev" target="_blank" class="card">
+    <img src="img/3_review_mode.png">
+    <div class="title">③<br>名称 ⇄ 記号<br><span>苦手な母音だけ練習</span></div>
+  </a>
 </div>
+
+<div class="row">
+  <a href="https://ipa-name-training-karuta.pages.dev/cards_name-vs-ipa.html" target="_blank" class="card">
+    <img src="img/4_name_symbol.png">
+    <div class="title">④<br>一覧表<br><span>名称 → 記号</span></div>
+  </a>
+  <a href="https://ipa-name-training-karuta.pages.dev/cards_ipa-vs-name.html" target="_blank" class="card">
+    <img src="img/5_symbol_name.png">
+    <div class="title">⑤<br>一覧表<br><span>記号 → 名称</span></div>
+  </a>
+  <a href="https://ipa-name-training-karuta.pages.dev/cards.html" target="_blank" class="card">
+    <img src="img/6_word_symbol.png">
+    <div class="title">⑥<br>一覧表<br><span>例単語 → 名称＋記号</span></div>
+  </a>
+  <a href="https://ipa-name-training-karuta.pages.dev/cards_name-vs-examples.html" target="_blank" class="card">
+    <img src="img/7_name_word.png">
+    <div class="title">⑦<br>一覧表<br><span>名称 → 例単語</span></div>
+  </a>
+  <a href="https://ipa-name-training-karuta.pages.dev/cards_ipa-vs-examples.html" target="_blank" class="card">
+    <img src="img/8_symbol_word.png">
+    <div class="title">⑧<br>一覧表<br><span>記号 → 例単語</span></div>
+  </a>
+  <a href="https://ipa-name-training-karuta.pages.dev/cards_examples-vs-ipa.html" target="_blank" class="card">
+    <img src="img/9_word_symbol2.png">
+    <div class="title">⑨<br>一覧表<br><span>例単語 → 記号</span></div>
+  </a>
+</div>
+
 </body>
 </html>
