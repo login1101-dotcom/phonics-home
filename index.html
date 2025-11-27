@@ -19,9 +19,9 @@ body {
 h1 {
   background: #00796b;
   color: white;
-  padding: 10px 0 0 0;
+  padding: 10px 0 0 0; /* 下余白0 */
   font-size: 20px;
-  margin-bottom: 10px;
+  margin: 0;
   height: 60px;
   display: flex;
   align-items: center;
@@ -30,7 +30,14 @@ h1 {
 }
 .nav-links {
   font-size: 16px;
-  padding-top: 15px;
+  padding: 0;
+  margin: 0;
+  background: #00796b;
+}
+.nav-links a {
+  color: white !important;
+  text-decoration: none !important;
+  margin: 0 8px;
 }
 .row {
   display: flex;
@@ -88,50 +95,51 @@ h1 {
 </style>
 </head>
 <body>
-<h1><div style="text-align:center;">
-Phonics-IPA 発音記号クイズアプリ
-  <div class="nav-links" style="padding-top:10px; color: white;">
-<a style="color:white;" href="index.html"><a style="color:white;" href="home.html">ホーム</a></a>　<a style="color:white;" href="about.html">このサイトについて</a>　<a style="color:white;" href="contact.html">問い合わせ</a>
+<h1>Phonics-IPA 発音記号クイズアプリ</h1>
+<div class="nav-links">
+  <a href="home.html">ホーム</a>
+  <a href="about.html">このサイトについて</a>
+  <a href="contact.html">お問い合わせ</a>
+  <a href="privacy.html">プライバシーポリシー</a>
 </div>
-</div></h1>
 
 <div class="row">
-  <a style="color:white;" href="https://ipa-name-quiz.pages.dev" target="_blank" class="card">
+  <a href="https://ipa-name-quiz.pages.dev" target="_blank" class="card">
     <img src="img/1_symbol_name.png">
     <div class="title">①<br>名称 ⇄ 記号<br><span>最も基本のクイズ</span></div>
   </a>
-  <a style="color:white;" href="https://ipa-sound-name-quiz.pages.dev" target="_blank" class="card">
+  <a href="https://ipa-sound-name-quiz.pages.dev" target="_blank" class="card">
     <img src="img/2_sound_symbol_name.png">
     <div class="title">②<br>音と記号 → 名称<br><span>音を聞くクイズ</span></div>
   </a>
-  <a style="color:white;" href="https://ipa-name-training.pages.dev" target="_blank" class="card">
+  <a href="https://ipa-name-training.pages.dev" target="_blank" class="card">
     <img src="img/3_review_mode.png">
     <div class="title">③<br>名称 ⇄ 記号<br><span>苦手な母音だけ練習</span></div>
   </a>
 </div>
 
 <div class="row">
-  <a style="color:white;" href="https://ipa-name-training-karuta.pages.dev/cards_name-vs-ipa.html" target="_blank" class="card">
+  <a href="https://ipa-name-training-karuta.pages.dev/cards_name-vs-ipa.html" target="_blank" class="card">
     <img src="img/4_name_symbol.png">
     <div class="title">④<br>一覧表<br><span>名称 → 記号</span></div>
   </a>
-  <a style="color:white;" href="https://ipa-name-training-karuta.pages.dev/cards_ipa-vs-name.html" target="_blank" class="card">
+  <a href="https://ipa-name-training-karuta.pages.dev/cards_ipa-vs-name.html" target="_blank" class="card">
     <img src="img/5_symbol_name.png">
     <div class="title">⑤<br>一覧表<br><span>記号 → 名称</span></div>
   </a>
-  <a style="color:white;" href="https://ipa-name-training-karuta.pages.dev/cards.html" target="_blank" class="card">
+  <a href="https://ipa-name-training-karuta.pages.dev/cards.html" target="_blank" class="card">
     <img src="img/6_word_symbol.png">
     <div class="title">⑥<br>一覧表<br><span>例単語 → 名称＋記号</span></div>
   </a>
-  <a style="color:white;" href="https://ipa-name-training-karuta.pages.dev/cards_name-vs-examples.html" target="_blank" class="card">
+  <a href="https://ipa-name-training-karuta.pages.dev/cards_name-vs-examples.html" target="_blank" class="card">
     <img src="img/7_name_word.png">
     <div class="title">⑦<br>一覧表<br><span>名称 → 例単語</span></div>
   </a>
-  <a style="color:white;" href="https://ipa-name-training-karuta.pages.dev/cards_ipa-vs-examples.html" target="_blank" class="card">
+  <a href="https://ipa-name-training-karuta.pages.dev/cards_ipa-vs-examples.html" target="_blank" class="card">
     <img src="img/8_symbol_word.png">
     <div class="title">⑧<br>一覧表<br><span>記号 → 例単語</span></div>
   </a>
-  <a style="color:white;" href="https://ipa-name-training-karuta.pages.dev/cards_examples-vs-ipa.html" target="_blank" class="card">
+  <a href="https://ipa-name-training-karuta.pages.dev/cards_examples-vs-ipa.html" target="_blank" class="card">
     <img src="img/9_word_symbol2.png">
     <div class="title">⑨<br>一覧表<br><span>例単語 → 記号</span></div>
   </a>
