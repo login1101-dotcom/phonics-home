@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Phonics / 発音記号アプリ一覧（正式名称版）</title>
+<style>
+body {
+  font-family: -apple-system, "Hiragino Sans", Arial, sans-serif;
+  background: #f4f7f6;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+}
+h1 {
+  background: #00796b;
+  color: white;
+  padding: 12px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 10px 0;
+}
+.card {
+  width: 130px;
+  height: 190px;
+  background: white;
+  border-radius: 10px;
+  border: 1.5px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+  text-decoration: none;
+  color: inherit;
+}
+.card:hover {
+  transform: translateY(-4px);
+}
+.card img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+}
+.title {
+  font-size: 13px;
+  font-weight: bold;
+  color: #00796b;
+  color: #00796b;n}n/* 全カード3行目を黒文字に */n.card .title span, .card .title br + span, .card .title br + br + span, .card .title { color: black !important; font-size: 13px !important; }n/* 元のクラス再定義 */n.title {  margin: 4px 0;
+  line-height: 1.2em;
+}
+
+/* ①〜③カードの追加行を黒文字に */
+.card:nth-child(1) .title span,
+.card:nth-child(2) .title span,
+.card:nth-child(3) .title span {
+  color: black !important;
+  font-size: 13px !important;
+}
+</style>
+</head>
+<body>
+<h1>Phonics / 発音記号アプリ一覧（正式名称版）</h1>
+
+<div class="row">
+  <a href="https://ipa-name-quiz.pages.dev" target="_blank" class="card">
+    <img src="img/1_symbol_name.png">
+    <div class="title">①<br>名称 ⇄ 記号<br><span style="color:black; font-size:13px;">最も基本のクイズ</span></div>
+  </a>
+  <a href="https://ipa-sound-name-quiz.pages.dev" target="_blank" class="card">
+    <img src="img/2_sound_symbol_name.png">
+    <div class="title">②<br>音と記号 → 名称<br><span style="color:black; font-size:13px;">音を聞くクイズ</span></div>
+  </a>
+  <a href="https://ipa-name-training.pages.dev" target="_blank" class="card">
+    <img src="img/3_review_mode.png">
+    <div class="title">③<br>名称 ⇄ 記号<br><span style="color:black; font-size:13px;">苦手な母音だけ練習</span></div>
+  </a>
+</div>
+
+<div class="row">
+  <a href="https://ipa-name-training-karuta.pages.dev/cards_name-vs-ipa.html" target="_blank" class="card">
+    <img src="img/4_name_symbol.png">
+    <div class="title">④<br>一覧表<br>名称 → 記号</div>
+  </a>
+  <a href="https://ipa-name-training-karuta.pages.dev/cards_ipa-vs-name.html" target="_blank" class="card">
+    <img src="img/5_symbol_name.png">
+    <div class="title">⑤<br>一覧表<br>記号 → 名称</div>
+  </a>
+  <a href="https://ipa-name-training-karuta.pages.dev/cards.html" target="_blank" class="card">
+    <img src="img/6_word_symbol.png">
+    <div class="title">⑥<br>一覧表<br>例単語 → 名称＋記号</div>
+  </a>
+  <a href="https://ipa-name-training-karuta.pages.dev/cards_name-vs-examples.html" target="_blank" class="card">
+    <img src="img/7_name_word.png">
+    <div class="title">⑦<br>一覧表<br>名称 → 例単語</div>
+  </a>
+  <a href="https://ipa-name-training-karuta.pages.dev/cards_ipa-vs-examples.html" target="_blank" class="card">
+    <img src="img/8_symbol_word.png">
+    <div class="title">⑧<br>一覧表<br>記号 → 例単語</div>
+  </a>
+  <a href="https://ipa-name-training-karuta.pages.dev/cards_examples-vs-ipa.html" target="_blank" class="card">
+    <img src="img/9_word_symbol2.png">
+    <div class="title">⑨<br>一覧表<br>例単語 → 記号</div>
+  </a>
+</div>
+
+</body>
+</html>
