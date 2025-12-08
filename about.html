@@ -3,60 +3,138 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>このサイトについて</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>このサイトについて - Phonics-IPA 発音記号クイズアプリ</title>
   <style>
     body {
       font-family: -apple-system, "Hiragino Sans", Arial, sans-serif;
-      background: #dff0e0;
-      text-align: center;
+      background: #f4f7f6;
       margin: 0;
-      padding: 20px 0;
+      padding: 0;
+      color: #333;
+    }
+
+    /* 共通ヘッダー */
+    h1.site-title {
+      background: #00796b;
+      color: white;
+      padding: 10px 0;
+      font-size: 20px;
+      margin: 0;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
     }
 
     .nav-links {
       font-size: 16px;
-      padding-top: 15px;
+      padding: 10px 0;
+      margin: 0;
+      background: #00796b;
+      text-align: center;
+    }
+
+    .nav-links a {
+      color: white !important;
+      text-decoration: none !important;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 40px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+      color: #00796b;
+      border-bottom: 2px solid #00796b;
+      padding-bottom: 10px;
+      margin-top: 30px;
+      font-size: 24px;
+    }
+
+    p {
+      line-height: 1.8;
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      margin-bottom: 20px;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .footer-link {
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+    }
+
+    .footer-link a {
+      color: #00796b;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 18px;
     }
   </style>
 </head>
 
 <body>
-  <div
-    style="max-width:850px; margin:40px auto; background:#fff; padding:30px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.12);">
 
-    <div style="width:80%;max-width:800px;margin:0 auto;text-align:left;line-height:1.8em;color:#333;">
-
-      <p style="font-size:32px;font-weight:bold;color:#00796b;text-align:center;">
-        このサイトについて
-      </p>
-
-      <p>本サイトは、初心者から上級者まで、発音記号の理解と実践的な活用を目指します。</p>
-
-      <h3>学習方法</h3>
-      <ul>
-        <li>形と名称の理解：クイズ形式で名称と形を覚えます。</li>
-        <li>音声確認：記号ごとの音声を聞き、理解を深めます。</li>
-        <li>苦手克服：苦手な記号だけを集中的に練習できます。</li>
-        <li>一覧確認：視覚情報で記憶を強化します。</li>
-        <li>反復学習：繰り返し学習で知識を定着させます。</li>
-        <li>段階別学習：基礎→実践へと無理なくレベルアップ可能</li>
-      </ul>
-
-      <h3>サイトの特徴</h3>
-      <ul>
-        <li>初心者〜上級者まで幅広く対応</li>
-        <li>効率的に発音記号を習得可能</li>
-        <li>スマートフォンでも利用可能</li>
-      </ul>
-
-    </div>
-
-    <div style="text-align: center; margin-top: 30px;">
-      <a href="index.html" style="color:#00796b; font-weight:bold; text-decoration:none;">TOPへ戻る</a>
-    </div>
-
+  <!-- 共通ヘッダー -->
+  <h1 class="site-title">Phonics-IPA 発音記号クイズアプリ</h1>
+  <div class="nav-links">
+    <a href="index.html">TOPへ戻る</a>
+    <a href="index.html">ホーム</a>
+    <a href="about.html">このサイトについて</a>
+    <a href="contact.html">お問い合わせ</a>
+    <a href="privacy.html">プライバシーポリシー</a>
   </div>
+
+  <div class="container">
+    <h2>このサイトについて</h2>
+    <p>
+      本サイト「Phonics-IPA 発音記号クイズアプリ」は、英語学習における「発音記号（IPA）」の習得をサポートするために開発されました。<br>
+      初心者から上級者まで、ゲーム感覚で楽しく、かつ効率的に発音記号を理解し、実践的な英語力を身につけることを目指しています。
+    </p>
+
+    <h2>学習方法</h2>
+    <p>当サイトでは、以下のステップで段階的に学習を進めることができます。</p>
+    <ul>
+      <li><strong>形と名称の理解：</strong> クイズ形式で、独特な記号の形と名前（アッシュ、シュワーなど）を覚えます。</li>
+      <li><strong>音声確認：</strong> ネイティブの音声を聞きながら、記号と実際の音を結びつけます。</li>
+      <li><strong>苦手克服：</strong> 自分の苦手な記号だけをピックアップして、集中的にトレーニングできます。</li>
+      <li><strong>一覧確認：</strong> 記号一覧表を使って、似ている記号の違いを視覚的に比較・整理します。</li>
+      <li><strong>反復学習：</strong> 何度も繰り返すことで、反射的に音がイメージできるまで定着させます。</li>
+      <li><strong>段階別学習：</strong> 基礎から応用まで、自分のレベルに合わせた無理のないペースで進められます。</li>
+    </ul>
+
+    <h2>サイトの特徴</h2>
+    <ul>
+      <li><strong>完全無料：</strong> すべての機能を無料でご利用いただけます。</li>
+      <li><strong>マルチデバイス対応：</strong> PCはもちろん、スマートフォンやタブレットでも快適に学習できます。</li>
+      <li><strong>効率的な設計：</strong> 隙間時間でも学習できるよう、シンプルで使いやすい操作性を追求しました。</li>
+    </ul>
+
+    <div class="footer-link">
+      <a href="index.html">TOPへ戻る</a>
+    </div>
+  </div>
+
 </body>
 
 </html>
