@@ -3,45 +3,107 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>ホーム</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ホーム - Phonics-IPA 発音記号クイズアプリ</title>
     <style>
         body {
             font-family: -apple-system, "Hiragino Sans", Arial, sans-serif;
-            text-align: center;
-            padding: 20px;
-            background: #dff0e0;
+            background: #f4f7f6;
+            margin: 0;
+            padding: 0;
+            color: #333;
         }
 
-        h1 {
-            color: #00796b;
-            margin-bottom: 25px;
+        /* 共通ヘッダー */
+        h1.site-title {
+            background: #00796b;
+            color: white;
+            padding: 10px 0;
+            font-size: 20px;
+            margin: 0;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .nav-links {
+            font-size: 16px;
+            padding: 10px 0;
+            margin: 0;
+            background: #00796b;
+            text-align: center;
+        }
+
+        .nav-links a {
+            color: white !important;
+            text-decoration: none !important;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 40px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+            text-align: center;
         }
 
         h2 {
             color: #00796b;
+            border-bottom: 2px solid #00796b;
+            padding-bottom: 10px;
             margin-top: 30px;
+            font-size: 24px;
+            text-align: left;
         }
 
-        p,
-        li {
-            max-width: 700px;
-            margin: 10px auto;
+        p, li {
             font-size: 16px;
-            line-height: 1.7em;
-            text-align: center;
+            line-height: 1.8;
+            color: #555;
+            text-align: left;
         }
 
         ul {
-            max-width: 700px;
-            margin: 10px auto;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .footer-link {
             text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .footer-link a {
+            color: #00796b;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 18px;
         }
     </style>
 </head>
 
 <body>
-    <div style="background:white; max-width:720px; margin:0 auto; padding:20px; border-radius:10px;">
-        <h1>ホーム</h1>
+
+    <!-- 共通ヘッダー -->
+    <h1 class="site-title">Phonics-IPA 発音記号クイズアプリ</h1>
+    <div class="nav-links">
+        <a href="index.html">TOPへ戻る</a>
+        <a href="index.html">ホーム</a>
+        <a href="about.html">このサイトについて</a>
+        <a href="contact.html">お問い合わせ</a>
+        <a href="privacy.html">プライバシーポリシー</a>
+    </div>
+
+    <div class="container">
+        <h2 style="margin-top: 0; text-align: center; border: none;">学習ガイド</h2>
 
         <p>このサイトは、英語の発音記号（IPA）を効率よく学べる学習ポータルです。初心者から上級者まで、自分のレベルに合わせて学習できるよう設計されています。発音記号の理解は、正しい発音・リスニング力・単語の記憶にも直結します。
         </p>
@@ -71,10 +133,11 @@
 
         <p>全体を通して、発音記号の名称・形・音・例単語を総合的に理解できる構成になっています。</p>
 
-        <div style="text-align: center; margin-top: 30px;">
-            <a href="index.html" style="color:#00796b; font-weight:bold; text-decoration:none;">TOPへ戻る</a>
+        <div class="footer-link">
+            <a href="index.html">TOPへ戻る</a>
         </div>
     </div>
+
 </body>
 
 </html>
