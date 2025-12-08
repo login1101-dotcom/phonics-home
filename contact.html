@@ -77,30 +77,39 @@
       border: 1px solid #b2dfdb;
     }
 
-    .email-address {
+    /* クリックできるメールリンク */
+    .email-link {
       font-size: 22px;
       font-weight: bold;
       color: #00796b;
       margin: 15px 0;
-      display: block;
+      display: inline-block;
+      text-decoration: underline;
       word-break: break-all;
+    }
+
+    .email-link:hover {
+      color: #004d40;
     }
 
     /* ボタンのデザイン */
     .btn-copy {
-      background-color: #00796b;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
+      background-color: #fff;
+      color: #00796b;
+      border: 2px solid #00796b;
+      padding: 8px 16px;
+      font-size: 14px;
       border-radius: 5px;
       cursor: pointer;
-      transition: background 0.3s;
+      transition: all 0.3s;
       font-weight: bold;
+      margin-left: 10px;
+      vertical-align: middle;
     }
 
     .btn-copy:hover {
-      background-color: #004d40;
+      background-color: #00796b;
+      color: white;
     }
 
     .btn-copy:active {
@@ -154,18 +163,18 @@
     <div class="contact-box">
       <p style="margin: 0; font-weight: bold; color: #004d40;">▼ メールアドレスはこちら</p>
       
-      <!-- メールアドレス表示 -->
-      <span class="email-address">otoiawase@appmail.uk</span>
+      <!-- クリックで起動するリンク -->
+      <a href="mailto:otoiawase@appmail.uk" class="email-link">otoiawase@appmail.uk</a>
       
       <!-- コピーボタン -->
-      <button class="btn-copy" onclick="copyToClipboard()">📋 アドレスをコピーする</button>
+      <button class="btn-copy" onclick="copyToClipboard()">📋 コピー</button>
       
-      <div id="copy-msg">コピーしました！</div>
+      <div id="copy-msg">アドレスをコピーしました！</div>
     </div>
 
     <p style="font-size: 14px; color: #777;">
-      ※お問い合わせ内容によっては、返信にお時間をいただく場合がございます。<br>
-      ※コピーしたアドレスをご利用のメールソフト（Gmail, Yahooメール等）の宛先に貼り付けて送信してください。
+      ※リンクをクリックするとメールソフトが起動します。<br>
+      ※うまく起動しない場合は「コピー」ボタンを押して、普段お使いのメールソフトに貼り付けてください。
     </p>
 
     <div class="footer-link">
