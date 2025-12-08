@@ -14,11 +14,11 @@
       color: #333;
     }
 
-    /* 共通ヘッダー */
-    h1.site-title {
+    /* 共通ヘッダー（index.htmlと完全一致） */
+    h1 {
       background: #00796b;
       color: white;
-      padding: 10px 0;
+      padding: 10px 0 0 0;
       font-size: 20px;
       margin: 0;
       height: 60px;
@@ -43,8 +43,14 @@
       font-weight: bold;
     }
 
+    /* 現在のページを目立たせる */
+    .nav-links a.active {
+      border-bottom: 2px solid white;
+      padding-bottom: 2px;
+    }
+
     .container {
-      max-width: 700px;
+      max-width: 720px;
       margin: 40px auto;
       padding: 40px;
       background: white;
@@ -156,17 +162,19 @@
 <body>
 
   <!-- 共通ヘッダー -->
-  <h1 class="site-title">Phonics-IPA 発音記号クイズアプリ</h1>
+  <h1>Phonics-IPA 発音記号クイズアプリ</h1>
   <div class="nav-links">
     <a href="index.html">TOPへ戻る</a>
-    <a href="index.html">ホーム</a>
+    <a href="home.html">学習ガイド</a>
     <a href="about.html">このサイトについて</a>
-    <a href="contact.html">お問い合わせ</a>
+    <a href="contact.html" class="active">お問い合わせ</a>
     <a href="privacy.html">プライバシーポリシー</a>
   </div>
 
   <div class="container">
-    <h2>お問い合わせ</h2>
+    <!-- タイトルを中央寄せに変更 -->
+    <h2 style="margin-top: 0; text-align: center; border: none;">お問い合わせ</h2>
+    
     <p>
       当サイト「Phonics-IPA 発音記号クイズアプリ」をご利用いただきありがとうございます。<br>
       ご意見、ご感想、不具合のご報告などは、以下のメールアドレスまでご連絡ください。
