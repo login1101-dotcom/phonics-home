@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://phonics-home.pages.dev/sitemap.xml
